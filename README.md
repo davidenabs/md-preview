@@ -17,8 +17,6 @@ An Advanced-styled Markdown preview and creation extension for Visual Studio Cod
 
 ## Screenshots
 
-_(Insert screenshots of the extension in action here)_
-Example:
 ![Preview Screenshot](https://raw.githubusercontent.com/davidenabs/md-preview/main/preview.png)
 
 ## Credits & References
