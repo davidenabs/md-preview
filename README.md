@@ -19,7 +19,7 @@ An Advanced-styled Markdown preview and creation extension for Visual Studio Cod
 
 _(Insert screenshots of the extension in action here)_
 Example:
-![Preview Screenshot](https://raw.githubusercontent.com/your-username/md-preview/main/media/screenshot.png)
+![Preview Screenshot](https://raw.githubusercontent.com/davidenabs/md-preview/main/preview.png)
 
 ## Credits & References
 
