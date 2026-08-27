@@ -1,0 +1,61 @@
+{
+  "name": "md-preview",
+  "displayName": "MD Preview",
+  "description": "Advanced styled markdown preview and creation",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidenabs/md-preview"
+  },
+  "icon": "media/icon.png",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "md-preview.createFile",
+        "title": "MD Preview: Create File"
+      },
+      {
+        "command": "md-preview.showPreview",
+        "title": "MD Preview: Show Preview",
+        "icon": "$(rocket)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "md-preview.showPreview",
+          "when": "resourceLangId == markdown",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.90.0",
+    "@types/node": "20.x",
+    "@types/marked": "^6.0.0",
+    "@types/dompurify": "^3.0.5",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "marked": "^14.1.0",
+    "dompurify": "^3.1.6"
+  }
+}
